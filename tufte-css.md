@@ -54,7 +54,7 @@ console.log(lexer.rules);
 
 물론, 적절한 한글 표현을 위해 글꼴을 골라 넣고 하면 쓸만할 것 같다. 간단하게는 개인 블로그를 그렇게 꾸미면 좋겠고, 좀 더 거창하게 나간다면, 깃헙에서 웹 훅 받아서 페이지 생성해서 보여주는 웹사이트로 만들어도 재밌을 것 같고.
 
-어디까지나 아이디어일 뿐이긴 해도, 괜찮지 않을까?
+어디까지나 아이디어일 뿐이긴 해도, 괜찮을 것 같다.
 
 [Edward Tufte]: https://en.wikipedia.org/wiki/Edward_Tufte
 [Dave Liepmann]: http://www.daveliepmann.com
