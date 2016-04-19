@@ -63,3 +63,9 @@ console.log(lexer.rules);
 [Jekyll]: https://jekyllrb.com
 [tufte-jekyll]: https://github.com/clayh53/tufte-jekyll
 [marked]: https://github.com/chjj/marked
+
+
+## 구현 조사
+
+
+### 클로저로 구현해본다면? 결국 클로저스크립트로 프론트에서도 처리 가능할듯.
