@@ -62,6 +62,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 익스텐션으로 처리하는 방식은 우선 여기까지만 설명하고, 다음 편부터 그 내부 진행과정을 더 상세하게 적도록 할게요.
 
+사파리 익스텐션에 대한 내용은 아래 애플 개발자 사이트에 잘 정리돼 있습니다.
+
+* <https://developer.apple.com/library/content/documentation/Tools/Conceptual/SafariExtensionGuide/ExtensionsOverview/ExtensionsOverview.html>
+
 ## macOS용 앱이 할 일
 
 이 일을 네이티브 애플리케이션의 형태라면 어떻게 처리할까요? (2.5)편에서 적은 대로, 종욱님으로부터 별도 앱이 나와 있다는 소식을 들었지만, 자세히 살펴보지는 않아습니다. 이미 구현된 형태와 다를 수도 있고, 비슷할 수도 있습니다. 우선은 제 나름대로 구현해서 공개할 예정입니다.
@@ -94,6 +98,10 @@ class OurAwesomeViewContorller {
 ```
 
 iOS나 macOS에서 개발할 때 쓰는 스위프트(swift)언어라서 그 모습은 생소하시겠지만, 생각보다는 간단하죠? `WKWebView`라는 인스턴스 만들어서 붙이면 끝입니다. 세상에, 이렇게 쉬울 수가?!
+
+웹킷 프레임워크에 대한 문서는 아래 링크에서 자세히 살펴볼 수 있습니다.
+
+* <https://developer.apple.com/reference/webkit>
 
 다시 정리하면, macOS 앱으로,
 
