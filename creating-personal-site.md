@@ -38,7 +38,7 @@
 ![](creating-personal-site/staticgen.png)
 * <https://www.staticgen.com>
 
-정말 많죠?
+한 번 들어가 보세요, 정말 많죠?
 
 ## 정적 웹 사이트를 만드는 방법을 달리 해보자
 
@@ -52,8 +52,17 @@
 
 이런 상황인데, 이 상황이 가만 보면 꽤 익숙합니다. 뭐냐면, 우리가 프로그램을 작성하면서 늘 하는 일이,
 
-소스파일(.java) -> 목적파일(.class) -> 패키징 (.jar)
+소스파일(.java) -> 목적파일(.class)
 
-처럼 컴파일하고 빌드하는 작업과 마찬가지 상황인 거죠. 다만, 소스와 결과의 포맷이 다를 뿐, 그 행위의 흐름은 꽤 일치합니다. 그러면, 이럴 때 쓰는 강력한 도구들이 이미 있잖아요? Java환경이라면 maven이나 gradle들이 있고, Scala라면  sbt,  Node.js라면 npm, 제가 쓰는 Clojure라면 leiningen이나 boot가 이미 강력한 관련 기능을 모두 담고 있고 완성도가 높단 말이죠. 패키징하거나 배포하는 작업들도 기본 지원하거나 이미 플러그인이 잘 나와있고요.
+처럼 컴파일하고 빌드하는 작업과 마찬가지 상황인 거죠. 다만, 소스와 결과의 포맷이 다를 뿐, 그 행위의 흐름은 꽤 일치합니다. 그러면, 이럴 때 쓰는 강력한 도구들이 이미 있잖아요? Java환경이라면 maven이나 gradle들이 있고, Scala라면  sbt,  Node.js라면 npm, 제가 쓰는 Clojure라면 leiningen이나 boot가 이미 강력한 관련 기능을 모두 담고 있고 완성도가 높단 말이죠. 패키징하거나 배포하는 작업들도 기본 지원하거나 이미 플러그인이 잘 나와 있고요.
+
+![](creating-personal-site/maven.png)
+![](creating-personal-site/gradle.png)
+![](creating-personal-site/sbt.png)
+![](creating-personal-site/npm.png)
+![](creating-personal-site/leiningen.png)
+![](creating-personal-site/boot.png)
 
 그러면, 어쩌면, 정적 웹사이트 생성기를 익히고 플러그인을 골라쓰는 일을 애써 따로 배울 필요없이, 내가 쓰는 빌드 툴에, 플러그인을 넣어서도 만들 수 있는 거 아닌가요? 어차피 만날 하는 개발 작업에 꼭 쓰는 빌드 툴을 쓰는 거니 이미 (상대적으로) 익숙한 작업이잖아요.
+
+## 클로저와 boot로 웹사이트를 만들어 보니
