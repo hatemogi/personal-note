@@ -33,7 +33,7 @@
 
 ![](creating-personal-site/jekyll.png)
 
-혹시나 루비 언어 바탕의 Jekyll이 마음에 들지 않는다면, 다른 정적 사이트 생성기 중에 마음에 드는 걸 골라서 써도 됩니다. 워낙 많기 때문에, 내가 즐겨쓰는 프로그래밍 언어로 만든 생성기 중에서 고른다면, 무언가 조금 고쳐써야 할 때에 큰 어려움 없이도 작업할 수 있겠습니다.
+혹시나 루비 언어를 바탕으로 하는 Jekyll이 마음에 들지 않는다면, 다른 정적 사이트 생성기 중에 마음에 드는 걸 골라서 써도 됩니다. 워낙 많기 때문에, 내가 즐겨쓰는 프로그래밍 언어로 만든 생성기 중에서 고른다면, 무언가 조금 고쳐써야 할 때에 큰 어려움 없이도 작업할 수 있겠습니다.
 
 ![](creating-personal-site/staticgen.png)
 * <https://www.staticgen.com>
@@ -57,12 +57,31 @@
 처럼 컴파일하고 빌드하는 작업과 마찬가지 상황인 거죠. 다만, 소스와 결과의 포맷이 다를 뿐, 그 행위의 흐름은 꽤 일치합니다. 그러면, 이럴 때 쓰는 강력한 도구들이 이미 있잖아요? Java환경이라면 maven이나 gradle들이 있고, Scala라면  sbt,  Node.js라면 npm, 제가 쓰는 Clojure라면 leiningen이나 boot가 이미 강력한 관련 기능을 모두 담고 있고 완성도가 높단 말이죠. 패키징하거나 배포하는 작업들도 기본 지원하거나 이미 플러그인이 잘 나와 있고요.
 
 ![](creating-personal-site/maven.png)
+
+https://maven.apache.org
+
 ![](creating-personal-site/gradle.png)
+
+https://gradle.org
+
 ![](creating-personal-site/sbt.png)
+
+http://www.scala-sbt.org
+
 ![](creating-personal-site/npm.png)
+
+https://www.npmjs.com
+
 ![](creating-personal-site/leiningen.png)
+
+https://leiningen.org
+
 ![](creating-personal-site/boot.png)
+
+http://boot-clj.com
 
 그러면, 어쩌면, 정적 웹사이트 생성기를 익히고 플러그인을 골라쓰는 일을 애써 따로 배울 필요없이, 내가 쓰는 빌드 툴에, 플러그인을 넣어서도 만들 수 있는 거 아닌가요? 어차피 만날 하는 개발 작업에 꼭 쓰는 빌드 툴을 쓰는 거니 이미 (상대적으로) 익숙한 작업이잖아요.
 
 ## 클로저와 boot로 웹사이트를 만들어 보니
+
+그래서, 클로저의 빌드 툴 중 하나인 boot를 써서 웹사이트를 생성해 봤습니다. 클로저에서 HTML 문서를 생성하는 라이브러리 중 하나인 hiccup을 써서, 클로저 기본 자료구조 (vector, map, list 등)을 써서 문서를 표현하고, 그걸 hiccup의 `(html)` 함수로 간단히 HTML 문서로 변환합니다.
